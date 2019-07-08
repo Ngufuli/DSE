@@ -6,7 +6,9 @@
         <meta name="author" content="Nicodemus Ngufuli">
         <meta name="keywords" content="CRDB Bank, NMB Bank, Swissport, Swala, Vodacom-Tanzania, Dar Es Salaam Stock Exchange PLC, TPCC">
         <link rel="stylesheet" type="text/css" href="style/bootstrap.min.css">
+        <link rel="icon" href="images/dse_logo.png" type="image/png" sizes="16x16">
         <meta content="description" content="The Dar Es Salaam stock Exchange">
+        <link rel="stylesheet" type="text/css" href="style/dse.css">
        
         
         <script type="text/javascript" src="http://dse.co.tz/widget/widget.js"></script>
@@ -16,7 +18,8 @@
         <section>
 
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <a class="navbar-brand" href="#">DSE|Tanzania</a>
+                <!-- <a class="navbar-brand" href="#">DSE|Tanzania</a> -->
+                <a href="#"><img src="images/dse_logo.png"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -58,6 +61,14 @@
                         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                     </form>
+                    <div>
+                        <div class="nav-item">
+                            <a class="nav-link" href="logIn.html"><span>Log in</span></a>
+                        </div>
+                        <div class="nav-item">
+                            <a class="nav-link" href="signUp.html"><span>Sign up</span></a>
+                        </div>
+                    </div>
                 </div>
             </nav>
 
@@ -104,18 +115,49 @@
         </section>
 
 
-        <footer>
-            <div>
-                <div>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
+        <footer id="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 footer-info">
+                            <h6><strong>Dar Es Salaam Stock Exchange</strong></h6>
+                            <p>DSE is Tanzania's stock exchange market aiming at inculcating the spirit of investing among Tanzanian and foreign citizens.</p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 footer-links">
+                            <h6>Important links</h6>
+                            <ul>
+                                <li>
+                                    <i class="ion-ios-arrow-right"></i><a href="#">Companies</a>
+                                </li>
+                                <li>
+                                    <i class="ion-ios-arrow-right"><a href="#">Products</a>
+                                </li>
+                                <li>
+                                    <i class="ion-ios-arrow-right"></i><a href="#">Enquiry</a>
+                                </li>
+                                <li>
+                                    <i class="ion-ios-arrow-right"></i><a href="#">About Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6 footer-contact">
+                            <h6><strong>Follow us</strong></h6>
+                            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                            <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+                        </div>
+                        <div class="col-lg-3 col-md-6 footer-newsletter">
+                            <h6>Our Newsletter</h6>
+                            <p>Please subscribe to our weekly newsletter so you may not not miss any update regarding the <strong>Dar Es Salaam Stock Exchange</strong>, subscribe by providing your e-mail below</p>
+                            <form name="" onsubmit="return newLetter()" action="" method="POST">
+                                <input class="" type="email" name="" value=""><input class="" type="submit" name="" value="Submit">
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <p class="copyright text-muted">&copy;DSE 2020</p>
         </footer>
 
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"
